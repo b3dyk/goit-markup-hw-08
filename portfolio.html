@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header class="page-header">
+      <div class="page-header__container">
+        <nav class="nav">
+          <a href="./index.html" class="logo page-header__logo"
+            >Web<span class="logo__accent">Studio</span></a
+          >
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link"
+              ><svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons/icons.svg#envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
+              ><svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons/icons.svg#telephone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- portfolio-section -->
+
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title visually-hidden">Портфоліо</h2>
+          <ul class="filters card-set">
+            <li class="filters__item">
+              <button type="button" class="filters__button filters__button--active">Все</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Веб-сайти</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Додатки</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Дизайн</button>
+            </li>
+            <li class="filters__item">
+              <button type="button" class="filters__button">Маркетинг</button>
+            </li>
+          </ul>
+
+          <ul class="examples card-set">
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/technocrack.jpg"
+                    alt="Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Технокряк</h3>
+                  <p class="examples__filter-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/new-orlean.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Постер New Orlean vs Golden Star</h3>
+                  <p class="examples__filter-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/seafood.jpg"
+                    alt="Ресторан Seafood"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Ресторан Seafood</h3>
+                  <p class="examples__filter-name">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/prime.jpg"
+                    alt="Проєкт Prime"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Проєкт Prime</h3>
+                  <p class="examples__filter-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/boxes.jpg"
+                    alt="Проєкт Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Проєкт Boxes</h3>
+                  <p class="examples__filter-name">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/inspiration.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Inspiration has no Borders</h3>
+                  <p class="examples__filter-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/limited-edition.jpg"
+                    alt="Видання Limited Edition"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Видання Limited Edition</h3>
+                  <p class="examples__filter-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/lab.jpg"
+                    alt="проєкт LAB"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Проєкт LAB</h3>
+                  <p class="examples__filter-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="examples__item">
+              <a class="examples__link" href="">
+                <div class="examples__wrapper">
+                  <img
+                    class="examples__img"
+                    src="./images/portfolio/growing-business.jpg"
+                    alt="growing business"
+                    width="370"
+                    height="294"
+                  />
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti doloremque
+                      aspernatur natus! Quam aperiam corporis repudiandae tenetur? Rerum quos
+                      delectus sequi.
+                    </p>
+                  </div>
+                </div>
+                <div class="examples__inner">
+                  <h3 class="examples__subtitle">Growing Business</h3>
+                  <p class="examples__filter-name">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <div class="page-footer__wrapper">
+          <a href="./index.html" class="logo page-footer__logo"
+            >Web<span class="logo__accent logo__accent--inverse">Studio</span></a
+          >
+          <address class="address page-footer__address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul class="address__list">
+            <li class="address__item">
+              <a href="mailto:info@example.com" class="address__link">info@example.com</a>
+            </li>
+            <li class="address__item">
+              <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__inner">
+          <h2 class="socials__cta">приєднуйтесь</h2>
+          <ul class="socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--basement" href="">
+                <svg class="socials__icon socials__icon--basement" width="20" height="20">
+                  <use href="./images/icons/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--basement" href="">
+                <svg class="socials__icon socials__icon--basement" width="20" height="20">
+                  <use href="./images/icons/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--basement" href="">
+                <svg class="socials__icon socials__icon--basement" width="20" height="20">
+                  <use href="./images/icons/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--basement" href="">
+                <svg class="socials__icon socials__icon--basement" width="20" height="20">
+                  <use href="./images/icons/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscribe-form page-footer__form" name="footer-form">
+          <label class="subscribe-form__field">
+            <b class="subscribe-form__label">Підпишіться на розсилку</b>
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              autocomplete="off"
+            />
+          </label>
+          <button class="button subscribe-form__btn" type="submit">
+            Підписатися
+            <svg class="button__icon" width="24" height="24" aria-hidden="true">
+              <use href="./images/icons/icons.svg#send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

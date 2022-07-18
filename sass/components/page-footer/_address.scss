@@ -1,0 +1,27 @@
+.address {
+  color: $color-text-white;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 14px;
+  line-height: 1.17;
+
+  transition: color $anim;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}

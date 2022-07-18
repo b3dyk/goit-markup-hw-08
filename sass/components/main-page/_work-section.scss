@@ -1,0 +1,36 @@
+.work {
+  @extend %section;
+  padding-top: 0;
+}
+
+.work__title {
+  @extend %section-title;
+}
+
+.work__item {
+  position: relative;
+  @include flex-based(3, 30px);
+}
+
+.work__wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.work__text {
+  color: $color-text-white;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  text-transform: uppercase;
+}

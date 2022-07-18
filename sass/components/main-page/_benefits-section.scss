@@ -1,0 +1,40 @@
+.benefits {
+  @extend %section;
+}
+
+.benefits__item {
+  @include flex-based(4, 30px);
+}
+
+.benefits__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  width: 100%;
+  background-color: $color-background-white;
+
+  transition: box-shadow $anim;
+
+  .benefits__item:hover &,
+  .benefits__item:focus & {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+}
+
+.benefits__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits__text {
+  color: $color-text-secondary;
+
+  font-size: 14px;
+  line-height: 1.71;
+}

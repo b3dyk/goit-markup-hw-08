@@ -1,0 +1,84 @@
+$color-accent: #2196f3;
+$color-accent-tranparent: rgba(33, 150, 243, 0.9);
+$color-text-primary: #212121;
+$color-text-secondary: #757575;
+$color-text-white: #fff;
+$color-button-hover: #188ce8;
+$color-background-white: #f5f4fa;
+$color-primary-grey: #2f303a;
+$color-box-border: #eee;
+$color-icon-inactive: #afb1b8;
+$anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+  color: $color-text-primary;
+
+  font-family: roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+::selection {
+    color: $color-text-white;
+    background-color: $color-accent;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@mixin flex-based($items, $indent) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  /* outline: 1px solid tomato; */
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+%section-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
