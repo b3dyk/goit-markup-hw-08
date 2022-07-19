@@ -327,7 +327,10 @@ p {
 }
 
 .button {
-  margin-bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -382,6 +385,14 @@ p {
   line-height: 1.142;
   text-transform: uppercase;
   color: #fff;
+}
+
+.socials__link--basement {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__icon--basement {
+  fill: #fff;
 }
 
 .page-header {
@@ -644,14 +655,6 @@ p {
   margin-bottom: 9px;
 }
 
-.socials__link--basement {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.socials__icon--basement {
-  fill: #fff;
-}
-
 .page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -722,10 +725,6 @@ p {
 }
 
 .subscribe-form__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
   margin-left: 12px;
 }
 
@@ -784,6 +783,18 @@ p {
   fill: #2196f3;
 }
 
+.modal__field {
+  margin-bottom: 28px;
+}
+
+.modal__comments-field {
+  margin-bottom: 20px;
+}
+
+.modal__checkbox {
+  margin-bottom: 30px;
+}
+
 .form {
   text-align: center;
 }
@@ -800,7 +811,6 @@ p {
 .field {
   position: relative;
   display: block;
-  margin-bottom: 28px;
 }
 
 .field__input {
@@ -894,7 +904,6 @@ p {
 .comments-field {
   position: relative;
   display: block;
-  margin-bottom: 20px;
 }
 
 .comments-field__textarea {
@@ -978,7 +987,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 30px;
   gap: 8px;
 }
 
