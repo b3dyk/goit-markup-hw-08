@@ -1,0 +1,27 @@
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+
+  transform: translateY(100%);
+
+  transition: transform $anim;
+  background-color: $color-accent-tranparent;
+
+  .examples__link:hover &,
+  .examples__link:focus & {
+    transform: translateY(0);
+  }
+
+  &__text {
+    width: 322px;
+    height: 168px;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $color-text-white;
+  }
+}

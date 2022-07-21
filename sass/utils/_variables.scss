@@ -48,14 +48,16 @@ p {
 }
 
 ::selection {
-    color: $color-text-white;
-    background-color: $color-accent;
+  color: $color-text-white;
+  background-color: $color-accent;
 }
 
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 @mixin flex-based($items, $indent) {
@@ -63,22 +65,46 @@ p {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
   padding: 0 15px;
-  /* outline: 1px solid tomato; */
+  margin: 0 auto;
+  // outline: 1px solid tomato;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 %section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.179;
+
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }

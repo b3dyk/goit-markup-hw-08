@@ -2,20 +2,65 @@
   background-color: $color-primary-grey;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.page-footer__container {
-  @extend .container;
-  display: flex;
-  align-items: center;
-  gap: 70px;
-}
+  &__container {
+    @extend .container;
 
-.page-footer__wrapper {
-  display: inline-flex;
-  flex-direction: column;
-}
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
-.page-footer__address {
-  margin-bottom: 9px;
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__wrapper {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+      gap: 70px;
+    }
+  }
+
+  &__inner {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
+      flex-direction: column;
+    }
+  }
+
+  &__address {
+    margin-bottom: 8px;
+  }
+
+  &__form {
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
+  }
 }

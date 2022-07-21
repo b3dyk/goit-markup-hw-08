@@ -6,9 +6,27 @@
   @extend %section-title;
 }
 
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .clients__item {
-  @include flex-based(6, 30px);
-  height: 92px;
+@media screen and (max-width: 767px) {
+    @include flex-based(2, 30px);
+    height: 92px;
+  }
+
+@media screen and (min-width: 768px) {
+    @include flex-based(3, 30px);
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flex-based(6, 30px);
+    height: 92px;
+  }
 }
 
 .clients__link {

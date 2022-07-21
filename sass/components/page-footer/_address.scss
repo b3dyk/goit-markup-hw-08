@@ -3,25 +3,25 @@
 
   font-style: normal;
   font-size: 14px;
-  line-height: 1.17;
-}
+  line-height: 1.714;
 
-.address__list {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-}
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
 
-.address__link {
-  color: rgba(255, 255, 255, 0.6);
+  &__link {
+    color: rgba(255, 255, 255, 0.6);
 
-  font-size: 14px;
-  line-height: 1.17;
+    font-size: 14px;
+    line-height: 1.714;
 
-  transition: color $anim;
+    transition: color $anim;
 
-  &:hover,
-  &:focus {
-    color: $color-accent;
+    &:hover,
+    &:focus {
+      color: $color-accent;
+    }
   }
 }

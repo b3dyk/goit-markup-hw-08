@@ -1,0 +1,30 @@
+.menu-socials {
+  display: flex;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 0.02em;
+    color: $color-accent;
+
+    &:not(:last-child) {
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+  }
+}

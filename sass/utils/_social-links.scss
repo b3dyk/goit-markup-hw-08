@@ -1,5 +1,5 @@
 .socials {
-  @extend .card-set;
+  display: flex;
   justify-content: center;
   gap: 10px;
 }
@@ -42,4 +42,3 @@
 .socials__icon--basement {
   fill: $color-text-white;
 }
-
