@@ -1,33 +1,35 @@
 @import './base/modern-normalize';
-@import './base/visually-hidden';
 
 @import './utils/variables';
-@import './utils/social-links';
-@import './utils/button';
-@import './utils/logo';
-@import './utils/overlay';
+@import './utils/mixins';
 
-@import './components/page-header/page-header';
-@import './components/page-header/navigation';
-@import './components/page-header/contacts';
-@import './components/page-header/menu';
-@import './components/page-header/menu-socials';
-
-@import './components/main-page/hero-section';
-@import './components/main-page/benefits-section';
-@import './components/main-page/work-section';
-@import './components/main-page/team-section';
-@import './components/main-page/clients-section';
-
-@import './components/page-footer/page-footer';
-@import './components/page-footer/address';
-@import './components/page-footer/subscribe-form';
-
-@import './components/modal/modal-window';
-@import './components/modal/form';
-@import './components/modal/comments';
+@import './components/button';
+@import './components/card-set';
+@import './components/container';
+@import './components/logo';
+@import './components/overlay';
+@import './components/social-links';
 @import './components/modal/checkbox';
+@import './components/modal/comments';
+@import './components/modal/form';
+@import './components/modal/modal-window';
 
-@import './components/portfolio-page/portfolio-section';
-@import './components/portfolio-page/filter-buttons';
-@import './components/portfolio-page/examples'
+@import './layout/page-header/contacts';
+@import './layout/page-header/menu-socials';
+@import './layout/page-header/menu';
+@import './layout/page-header/navigation';
+@import './layout/page-header/page-header';
+
+@import './layout/main-page/hero-section';
+@import './layout/main-page/benefits-section';
+@import './layout/main-page/work-section';
+@import './layout/main-page/team-section';
+@import './layout/main-page/clients-section';
+
+@import './layout/portfolio-page/examples';
+@import './layout/portfolio-page/filter-buttons';
+@import './layout/portfolio-page/portfolio-section';
+
+@import './layout/page-footer/address';
+@import './layout/page-footer/page-footer';
+@import './layout/page-footer/subscribe-form';

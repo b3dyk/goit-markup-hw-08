@@ -1,6 +1,10 @@
 .benefits {
   @extend %section;
 
+  &__title {
+    @include visually-hidden;
+  }
+
   .benefits__item {
     &:not(:last-child) {
       margin-bottom: 30px;
