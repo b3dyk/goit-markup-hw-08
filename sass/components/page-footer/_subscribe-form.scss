@@ -19,7 +19,7 @@
     line-height: 1.143;
     text-transform: uppercase;
 
-    color: $color-text-white;
+    color: var(--color-text-white);
   }
 
   &__input {
@@ -31,13 +31,13 @@
     font-size: 16px;
     line-height: 1.25;
 
-    background-color: $color-primary-grey;
-    color: $color-text-white;
+    background-color: var(--color-primary-grey);
+    color: var(--color-text-white);
     outline: 1px solid transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    transition: outline-color $anim;
+    transition: outline-color var(--anim);
 
     &:focus-within {
       outline-color: #fff;

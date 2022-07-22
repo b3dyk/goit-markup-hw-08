@@ -7,7 +7,7 @@
 
   &__link {
     display: block;
-    transition: box-shadow $anim;
+    transition: box-shadow var(--anim);
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -22,7 +22,7 @@
 
   &__inner {
     padding: 20px 24px;
-    border: 1px solid $color-box-border;
+    border: 1px solid var(--color-box-border);
     border-top: none;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -50,7 +50,7 @@
   &__filter-name {
     margin-top: 0;
     margin-bottom: 0;
-    color: $color-text-secondary;
+    color: var(--color-text-secondary);
 
     font-size: 16px;
     line-height: 1.875;

@@ -1,17 +1,19 @@
-$color-accent: #2196f3;
-$color-accent-tranparent: rgba(33, 150, 243, 0.9);
-$color-text-primary: #212121;
-$color-text-secondary: #757575;
-$color-text-white: #fff;
-$color-button-hover: #188ce8;
-$color-background-white: #f5f4fa;
-$color-primary-grey: #2f303a;
-$color-box-border: #eee;
-$color-icon-inactive: #afb1b8;
-$anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+:root {
+  --color-accent: #2196f3;
+  --color-accent-tranparent: rgba(33, 150, 243, 0.9);
+  --color-text-primary: #212121;
+  --color-text-secondary: #757575;
+  --color-text-white: #fff;
+  --color-button-hover: #188ce8;
+  --color-background-white: #f5f4fa;
+  --color-primary-grey: #2f303a;
+  --color-box-border: #eee;
+  --color-icon-inactive: #afb1b8;
+  --anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 body {
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -48,8 +50,8 @@ p {
 }
 
 ::selection {
-  color: $color-text-white;
-  background-color: $color-accent;
+  color: var(--color-text-white);
+  background-color: var(--color-accent);
 }
 
 .card-set {

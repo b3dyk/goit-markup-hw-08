@@ -9,7 +9,7 @@
   line-height: 1.5;
   text-align: center;
 
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 
   @media screen and (min-width: 1200px) {
     line-height: 1.15;
@@ -31,12 +31,12 @@
   font-size: 14px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  color: $color-text-primary;
+  color: var(--color-text-primary);
 
-  transition: border $anim;
+  transition: border var(--anim);
 
   .field:focus-within & {
-    border: 1px solid $color-accent;
+    border: 1px solid var(--color-accent);
     outline: 1px solid transparent;
   }
 
@@ -47,7 +47,7 @@
 
     color: rgba(117, 117, 117, 0.5);
     opacity: 0;
-    transition: opacity $anim;
+    transition: opacity var(--anim);
 
     .field:focus-within & {
       opacity: 1;
@@ -64,9 +64,9 @@
   line-height: 1.167;
   letter-spacing: 0.01em;
 
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 
-  transition: transform $anim;
+  transition: transform var(--anim);
 
   .field:focus-within & {
     transform: translate(-42px, -270%) scale(1);
@@ -82,9 +82,9 @@
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  transition: fill $anim;
+  transition: fill var(--anim);
 
   .field:focus-within & {
-    fill: $color-accent;
+    fill: var(--color-accent);
   }
 }

@@ -9,8 +9,8 @@
 
   transform: translateY(100%);
 
-  transition: transform $anim;
-  background-color: $color-accent-tranparent;
+  transition: transform var(--anim);
+  background-color: var(--color-accent-tranparent);
 
   .examples__link:hover &,
   .examples__link:focus & {
@@ -22,6 +22,6 @@
     height: 168px;
     font-size: 18px;
     line-height: 1.56;
-    color: $color-text-white;
+    color: var(--color-text-white);
   }
 }

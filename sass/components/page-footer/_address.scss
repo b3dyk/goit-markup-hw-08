@@ -1,5 +1,5 @@
 .address {
-  color: $color-text-white;
+  color: var(--color-text-white);
 
   font-style: normal;
   font-size: 14px;
@@ -17,11 +17,11 @@
     font-size: 14px;
     line-height: 1.714;
 
-    transition: color $anim;
+    transition: color var(--anim);
 
     &:hover,
     &:focus {
-      color: $color-accent;
+      color: var(--color-accent);
     }
   }
 }

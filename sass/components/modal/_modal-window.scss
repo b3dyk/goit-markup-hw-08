@@ -9,7 +9,7 @@
 
   opacity: 1;
   overflow-y: scroll;
-  transition: opacity $anim, visibility $anim;
+  transition: opacity var(--anim), visibility var(--anim);
 }
 
 .is-hidden {
@@ -24,8 +24,8 @@
   transform: scale(1);
 
   padding: 40px;
-  background-color: $color-text-white;
-  transition: transform $anim;
+  background-color: var(--color-text-white);
+  transition: transform var(--anim);
 
   .is-hidden & {
     transform: scale(1.1);
@@ -74,10 +74,10 @@
 }
 
 .close-btn__icon {
-  transition: fill $anim;
+  transition: fill var(--anim);
 
   .close-btn:hover & {
-    fill: $color-accent;
+    fill: var(--color-accent);
   }
 }
 

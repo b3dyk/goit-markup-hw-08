@@ -18,7 +18,7 @@
     padding-right: 40px;
 
     transform: translate(100%);
-    transition: transform $anim;
+    transition: transform var(--anim);
 
     &.is-open {
       transform: translate(0);
@@ -43,7 +43,7 @@
 
     &:hover,
     &:focus {
-      color: $color-accent;
+      color: var(--color-accent);
     }
 
     @media screen and (min-width: 768px) {

@@ -14,25 +14,25 @@
   flex-shrink: 0;
   width: 16px;
   height: 15px;
-  outline: 2px solid $color-text-primary;
+  outline: 2px solid var(--color-text-primary);
   outline-offset: -2px;
   border-radius: 2px;
-  transition: background-color $anim, outline-color $anim;
+  transition: background-color var(--anim), outline-color var(--anim);
 
   .checkbox__input:checked + & {
-    background-color: $color-accent;
+    background-color: var(--color-accent);
     outline-color: transparent;
   }
 }
 
 .checkbox__content {
-  fill: $color-text-white;
+  fill: var(--color-text-white);
 }
 
 .checkbox__text {
   font-size: 12px;
   line-height: 1.167;
-  color: $color-text-secondary;
+  color: var(--color-text-secondary);
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;
@@ -41,6 +41,6 @@
 }
 
 .checkbox__link {
-  color: $color-accent;
+  color: var(--color-accent);
   text-decoration: underline;
 }

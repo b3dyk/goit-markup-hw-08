@@ -18,17 +18,17 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    color: $color-text-secondary;
+    color: var(--color-text-secondary);
 
     font-weight: 500;
     font-size: 24px;
     letter-spacing: 0.02em;
 
-    transition: color $anim;
+    transition: color var(--anim);
 
     &:hover,
     &:focus {
-      color: $color-accent;
+      color: var(--color-accent);
     }
 
     @media screen and (max-width: 767px) {
@@ -57,7 +57,7 @@
 
     &--accent {
       @media screen and (max-width: 767px) {
-        color: $color-accent;
+        color: var(--color-accent);
         font-size: 34px;
         line-height: 1.176;
 
