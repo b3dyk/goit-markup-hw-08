@@ -1,7 +1,3 @@
 .portfolio {
-    @extend %section;
-
-    &__title {
-        @include visually-hidden
-    }
+  @extend %section;
 }

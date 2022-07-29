@@ -11,7 +11,7 @@
 
   color: var(--color-text-primary);
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     line-height: 1.15;
   }
 }

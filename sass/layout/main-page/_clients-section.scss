@@ -14,19 +14,15 @@
 }
 
 .clients__item {
-@media screen and (max-width: 767px) {
-    @include flex-based(2, 30px);
-    height: 92px;
+  @include flex-based(2);
+  height: 92px;
+
+  @include mq(tab) {
+    @include flex-based(3);
   }
 
-@media screen and (min-width: 768px) {
-    @include flex-based(3, 30px);
-    height: 92px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    @include flex-based(6, 30px);
-    height: 92px;
+  @include mq(desk) {
+    @include flex-based(6);
   }
 }
 

@@ -3,67 +3,67 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &__container {
+  .page-footer__container {
     @extend .container;
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desk) {
       display: flex;
       align-items: center;
     }
   }
+}
 
-  &__logo {
-    display: inline-block;
-    margin-bottom: 20px;
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.page-footer__wrapper {
+  @include mq(mob-only) {
+    margin-bottom: 60px;
   }
 
-  &__wrapper {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 60px;
-    }
-
-    @media screen and (min-width: 768px) {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-      gap: 70px;
-    }
+  @include mq(tab) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 
-  &__inner {
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 60px;
-      text-align: center;
-    }
+  @include mq(desk) {
+    justify-content: space-between;
+    gap: 70px;
+  }
+}
 
-    @media screen and (min-width: 768px) {
-      display: inline-flex;
-      flex-direction: column;
-    }
+.page-footer__inner {
+  @include mq(no-desk) {
+    margin-bottom: 60px;
+    text-align: center;
   }
 
-  &__address {
-    margin-bottom: 8px;
+  @include mq(tab) {
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+
+.page-footer__address {
+  margin-bottom: 8px;
+}
+
+.page-footer__form {
+  @include mq(no-desk) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  &__form {
-    @media screen and (max-width: 1199px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      max-width: 450px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    @media screen and (min-width: 1200px) {
-      margin-left: auto;
-    }
+  @include mq(desk) {
+    margin-left: auto;
   }
 }

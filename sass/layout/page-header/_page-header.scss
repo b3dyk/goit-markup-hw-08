@@ -1,31 +1,31 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+}
 
-  &__container {
-    @extend .container;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.page-header__container {
+  @extend .container;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    @media screen and (max-width: 767px) {
-      position: relative;
-    }
+  @include mq(mob-only) {
+    position: relative;
+  }
+}
+
+.page-header__logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include mq(tab) {
+    margin-right: 88px;
   }
 
-  &__logo {
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 93px;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-right: 88px;
-    }
+  @include mq(desk) {
+    margin-right: 93px;
   }
+}
 
-  &__menu-socials {
-    margin-top: 64px;
-  }
+.page-header__menu-socials {
+  margin-top: 64px;
 }

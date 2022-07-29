@@ -1,61 +1,57 @@
 .benefits {
   @extend %section;
+}
 
-  &__title {
-    @include visually-hidden;
-  }
-
-  .benefits__item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 768px) {
-      @include flex-based(2, 30px);
-    }
-
-    @media screen and (min-width: 1200px) {
-      @include flex-based(4, 30px);
-    }
-  }
-
-  &__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.benefits__item {
+  &:not(:last-child) {
     margin-bottom: 30px;
-    border-radius: 4px;
-    height: 120px;
-    width: 100%;
-    background-color: var(--color-background-white);
-
-    transition: box-shadow var(--anim);
-
-    .benefits__item:hover &,
-    .benefits__item:focus & {
-      box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    }
-
-    @media screen and (min-width: 1200px) {
-    }
   }
 
-  &__subtitle {
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
+  @include mq(tab) {
+    @include flex-based(2);
   }
 
-  &__text {
-    color: var(--color-text-secondary);
-
-    font-size: 14px;
-    line-height: 1.714;
+  @include mq(desk) {
+    @include flex-based(4);
   }
+}
+
+.benefits__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+  width: 100%;
+  background-color: var(--color-background-white);
+
+  transition: box-shadow var(--anim);
+
+  .benefits__item:hover &,
+  .benefits__item:focus & {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  @include mq(desk) {
+  }
+}
+
+.benefits__subtitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  @include mq(mob-only) {
+    text-align: center;
+  }
+}
+
+.benefits__text {
+  color: var(--color-text-secondary);
+
+  font-size: 14px;
+  line-height: 1.714;
 }

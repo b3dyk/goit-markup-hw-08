@@ -4,24 +4,24 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
+}
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
+.address__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-  &__link {
-    color: rgba(255, 255, 255, 0.6);
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
 
-    font-size: 14px;
-    line-height: 1.714;
+  font-size: 14px;
+  line-height: 1.714;
 
-    transition: color var(--anim);
+  transition: color var(--anim);
 
-    &:hover,
-    &:focus {
-      color: var(--color-accent);
-    }
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
   }
 }

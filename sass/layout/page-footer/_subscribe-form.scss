@@ -1,11 +1,11 @@
 .subscribe-form {
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     display: flex;
     align-items: flex-end;
   }
 
   &__field {
-    @media screen and (max-width: 1199px) {
+    @include mq(no-desk) {
       width: 100%;
     }
   }
@@ -43,11 +43,11 @@
       outline-color: #fff;
     }
 
-    @media screen and (max-width: 1199px) {
+    @include mq(no-desk) {
       margin-bottom: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include mq(desk) {
       width: 358px;
       margin-right: 12px;
     }

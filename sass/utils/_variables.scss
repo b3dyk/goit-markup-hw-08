@@ -58,7 +58,7 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -73,7 +73,7 @@ p {
 
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     margin-bottom: 50px;
 
     font-size: 36px;

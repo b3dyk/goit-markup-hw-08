@@ -30,12 +30,12 @@
   .is-hidden & {
     transform: scale(1.1);
 
-    @media screen and (min-width: 480px) {
+    @include mq(mob) {
       transform: translate(-50%, -50%) scale(1.1);
     }
   }
 
-  @media screen and (min-width: 480px) {
+  @include mq(mob) {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -45,7 +45,7 @@
     min-height: 609px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     max-width: 528px;
     min-height: 581px;
   }
@@ -66,7 +66,7 @@
 
   cursor: pointer;
 
-  @media screen and (min-width: 1200px) {
+  @include mq(desk) {
     top: 0;
     right: 0;
     transform: translate(50%, -50%);

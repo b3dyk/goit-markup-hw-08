@@ -2,39 +2,39 @@
   @extend %section;
   padding-top: 0;
 
-  @media screen and (max-width: 1199px) {
+  @include mq(no-desk) {
     display: none;
   }
 
   &__title {
     @extend %section-title;
   }
+}
 
-  &__item {
-    position: relative;
-    @include flex-based(3, 30px);
-  }
+.work__item {
+  position: relative;
+  @include flex-based(3);
+}
 
-  &__wrapper {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    left: 0;
-    height: 70px;
-    width: 100%;
+.work__wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
 
-    background-color: rgba(47, 48, 58, 0.8);
-  }
+  background-color: rgba(47, 48, 58, 0.8);
+}
 
-  &__text {
-    color: var(--color-text-white);
+.work__text {
+  color: var(--color-text-white);
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    text-align: center;
-    text-transform: uppercase;
-  }
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  text-transform: uppercase;
 }
