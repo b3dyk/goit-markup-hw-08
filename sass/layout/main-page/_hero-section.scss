@@ -1,14 +1,13 @@
 $gradient-background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
 .hero {
-  background-color: var(--color-primary-grey);
-  text-align: center;
-}
-.hero__container {
   margin-left: auto;
   margin-right: auto;
   padding: 188px 15px;
-  max-width: 768px;
+
+  background-color: var(--color-primary-grey);
+  text-align: center;
+
   background-image: $gradient-background, url(../images/hero/hero-background-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;

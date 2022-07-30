@@ -422,6 +422,7 @@ p {
   width: 100%;
   height: 100%;
   bottom: 0;
+  padding: 0 24px;
   transform: translateY(101%);
   transition: transform var(--anim);
   background-color: var(--color-accent-tranparent);
@@ -430,11 +431,14 @@ p {
   transform: translateY(0);
 }
 .overlay__text {
-  width: 322px;
-  height: 168px;
   font-size: 18px;
   line-height: 1.56;
   color: var(--color-text-white);
+}
+@media screen and (max-width: 400px) {
+  .overlay__text {
+    font-size: 14px;
+  }
 }
 
 .socials {
@@ -1089,37 +1093,33 @@ p {
 }
 
 .hero {
-  background-color: var(--color-primary-grey);
-  text-align: center;
-}
-
-.hero__container {
   margin-left: auto;
   margin-right: auto;
   padding: 188px 15px;
-  max-width: 768px;
+  background-color: var(--color-primary-grey);
+  text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-mobile@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-tablet.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-tablet@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__container {
+  .hero {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -1127,7 +1127,7 @@ p {
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero__container {
+  .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-background-desktop@2x.jpg);
   }
 }
